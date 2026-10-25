@@ -1,0 +1,75 @@
+{
+  "name": "E6_transfer_effnet",
+  "config": {
+    "epochs": 3,
+    "batch_size": 64,
+    "lr": 0.0025,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "loss": "bce",
+    "augment": true,
+    "fix_channels": true,
+    "train_files": [
+      "data_batch_1",
+      "data_batch_3",
+      "data_batch_4",
+      "data_batch_5"
+    ],
+    "val_files": [
+      "data_batch_2"
+    ],
+    "params": 4020358,
+    "params_trainable": 4020358
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 0.37336654682159426,
+      "train_acc": 0.24525,
+      "val_loss": 0.31912985763549806,
+      "val_acc": 0.3697,
+      "cum_time": 55.38534188270569,
+      "epoch_time_s": 55.38534116744995,
+      "lr": 0.0025,
+      "train_samples_per_s": 722.2127580484791
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.2827215789794922,
+      "train_acc": 0.41225,
+      "val_loss": 0.26816652023792265,
+      "val_acc": 0.4762,
+      "cum_time": 106.53914213180542,
+      "epoch_time_s": 51.153130769729614,
+      "lr": 0.0025,
+      "train_samples_per_s": 781.9658229730566
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.24540630807876587,
+      "train_acc": 0.491175,
+      "val_loss": 0.2335582997083664,
+      "val_acc": 0.5399,
+      "cum_time": 169.75038886070251,
+      "epoch_time_s": 63.21059036254883,
+      "lr": 0.0025,
+      "train_samples_per_s": 632.8053538272172
+    }
+  ],
+  "train_time_s": 169.75088572502136,
+  "test_time_s": 1.8171401023864746,
+  "peak_gpu_mem_mb": 170.66259765625,
+  "test_acc": 0.5406,
+  "per_class_acc": {
+    "airplane": 0.563,
+    "automobile": 0.726,
+    "bird": 0.313,
+    "cat": 0.333,
+    "deer": 0.446,
+    "dog": 0.542,
+    "frog": 0.685,
+    "horse": 0.623,
+    "ship": 0.563,
+    "truck": 0.612
+  }
+}

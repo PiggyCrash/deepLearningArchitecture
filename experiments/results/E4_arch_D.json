@@ -1,0 +1,75 @@
+{
+  "name": "E4_arch_D",
+  "config": {
+    "epochs": 3,
+    "batch_size": 10,
+    "lr": 0.0025,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "loss": "ce",
+    "augment": true,
+    "fix_channels": true,
+    "train_files": [
+      "data_batch_1",
+      "data_batch_3",
+      "data_batch_4",
+      "data_batch_5"
+    ],
+    "val_files": [
+      "data_batch_2"
+    ],
+    "params": 482730,
+    "params_trainable": 482730
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 1.6074156619161368,
+      "train_acc": 0.40807500649616124,
+      "val_loss": 1.3503322599411012,
+      "val_acc": 0.5089,
+      "cum_time": 68.66129350662231,
+      "epoch_time_s": 68.66129112243652,
+      "lr": 0.0025,
+      "train_samples_per_s": 582.5698781089358
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.2173824038803578,
+      "train_acc": 0.5665500072594732,
+      "val_loss": 0.948866394329071,
+      "val_acc": 0.6705,
+      "cum_time": 143.4220471382141,
+      "epoch_time_s": 74.76049876213074,
+      "lr": 0.0025,
+      "train_samples_per_s": 535.0419093279463
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0509399279281497,
+      "train_acc": 0.632500008225441,
+      "val_loss": 0.9200961827278137,
+      "val_acc": 0.6707,
+      "cum_time": 210.9288101196289,
+      "epoch_time_s": 67.50631999969482,
+      "lr": 0.0025,
+      "train_samples_per_s": 592.5371135647866
+    }
+  ],
+  "train_time_s": 210.92914009094238,
+  "test_time_s": 0.7861616611480713,
+  "peak_gpu_mem_mb": 156.572265625,
+  "test_acc": 0.6657,
+  "per_class_acc": {
+    "airplane": 0.656,
+    "automobile": 0.878,
+    "bird": 0.796,
+    "cat": 0.235,
+    "deer": 0.454,
+    "dog": 0.525,
+    "frog": 0.833,
+    "horse": 0.585,
+    "ship": 0.872,
+    "truck": 0.823
+  }
+}
