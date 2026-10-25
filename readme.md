@@ -1,8 +1,5 @@
 # CIFAR-10 CNN Experiments — img_clf
 
-> "If I change X, what happens to Y?" — a systematic, GPU-accelerated experiment
-> series on the original `img_clf.ipynb` notebook: **12 experiments, one variable
-> at a time, every result quantified.**
 
 [![Device](https://img.shields.io/badge/device-CUDA%20(RTX%204050)-76B900)](#general-setup)
 [![torch](https://img.shields.io/badge/torch-2.7.1%2Bcu118-EE4C2C)](#general-setup)
